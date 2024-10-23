@@ -30,3 +30,34 @@ int main() {
     cout<<"ciao"<<nome<<endl;
     }
 }
+
+//ESERCIZIO3//
+
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int i,N,contPari,contDispari,restoDue,x;
+    do{
+        cout<<"quanti numeri da generare"<<endl;
+        cin>>N;
+        }while(N<0);
+        contPari=0;
+        contDispari=0;
+        i=0;
+        for(i=0;i<=N;i++){
+            x=rand()%1001;
+            restoDue=x%2;
+            if(restoDue==0){
+                contPari=contPari+1;
+                }else{
+                    contDispari=contDispari+1;
+}
+cout<<i+1<<"numero generato"<<x<<endl;
+}
+cout<<"sono stati generati"<<contPari<<"numeri pari e"<<contDispari<<"numeriDispari"<<endl;
+
+        
+   
+}
